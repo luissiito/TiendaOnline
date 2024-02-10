@@ -1,0 +1,81 @@
+
+$colorDeFondoDelbotonAgregar: #f07f09;
+@import "Menu.scss";
+
+%ajustesDeLosHijos{
+    align-self: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+div[id^='cuadroDeInformacionDelProducto']{//== #cuadroDeInformacionDelProducto   
+    @extend %menu;
+    background-color: beige;
+    display: grid;
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    margin: 0;    
+    position: relative;
+    #cuadroCantidadDelMismoProducto{
+        background-color: purple;
+        border-radius: 8%;
+        display: block;
+        height: 3em; width: 3em;
+        position: absolute;
+        left: 87%;
+        top: -.3em;
+        #spanCantidadDelMismoProducto{
+            font-size: 1em;
+            font-weight: bolder;
+            position: relative;
+            top: 1em;
+        }
+    }
+    #MensajeEN_OFERTA{                
+        color: green;
+        grid-column: span 1;
+    }
+    #MarcaDelProducto{
+        color: black;
+        grid-column: span 1;
+    }
+    #NombreParaPresentacion{
+        @extend %menu;
+        color: yellow;
+        font-size: 1em;
+        grid-column: span 1;
+    }
+    #SimboloDeDinero{
+        background-color: #ffff00;
+        color: black;
+        grid-column: span 1;
+    }
+    #PrecioDelProducto{
+        background-color:rgba(2,3, 17,0.8);
+        font-size: 1.8em;  
+        grid-column: span 1;
+    }
+    #VentaPorUnidad{
+        color: black;
+        grid-column: span 1;
+    }
+    input[id^='btnAgregar']{/*#btnAgregar*/
+        background-color:  $colorDeFondoDelbotonAgregar;
+        border-radius: 15%;
+        color: whitesmoke;
+        font-size: 1.2em;
+        font-weight: bolder;
+        grid-column: span 1;
+        &:hover{
+            background-color: #835e17;
+            color: blue;            
+        }
+    }
+    *{
+        @extend %ajustesDeLosHijos;
+        @extend %mediaMaxWidth1280Px;
+    }
+}
+
+

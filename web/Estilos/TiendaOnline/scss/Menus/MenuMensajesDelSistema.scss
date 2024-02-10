@@ -1,0 +1,12 @@
+
+@import "Menu.scss";
+#menuDeMensajesDelSistema{
+    @extend %menu;
+    h2{@extend %titulos}
+     #spanMensajeSinStock{ 
+         background-color: red;
+         color: white;
+         font-size: 1.5em;
+         font-weight: bold;
+     }
+}

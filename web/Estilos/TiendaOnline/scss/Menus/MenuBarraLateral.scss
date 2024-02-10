@@ -1,0 +1,7 @@
+
+@import "Menu.scss";
+
+#cuadroMenuBarraLateral{
+    @extend %menu;
+    grid-area : cuadroMenuBarraLateral;
+}

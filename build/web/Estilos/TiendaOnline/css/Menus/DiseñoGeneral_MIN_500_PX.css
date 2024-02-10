@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-03-2022, 17:09:24
+    Author     : lugo_
+*/
+
+div{
+    margin: 1em auto !important;
+    width: 80% !important;
+}
+#cuadroMenuCategorias{
+    padding: 1em !important;
+}
+#cuadroMenuCategorias #listaDeNombresDeLasCategoriasMC div{
+        display: block !important;
+        margin: 1em auto !important;
+        width: 80% !important;
+    }
+#cuadroMenuSubCategoria{
+     background-color: white !important;
+     color: black;
+     padding: 1em;
+     text-align: center;
+}
+#NombreParaPresentacion{
+    color: black !important;
+}
+/*#cuadroMenuCategorias #listaDeNombresDeLasCategoriasMC div:nth-child(4){
+    display: inline-block;
+    width:20%;
+}*/
